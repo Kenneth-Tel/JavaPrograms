@@ -24,6 +24,6 @@ The idea behind this, is that one is able to parse an Array into the playGaltonB
 #### 2.2 Bugs.
 None seen as of yet.
 
-#### 2.3 Additions 
+#### 2.3 Additions Needed
 - Parse Array
 - Bias on Ball chance
