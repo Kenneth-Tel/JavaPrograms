@@ -12,18 +12,28 @@ It is currently very inefficient.
 
 
 ## 2. Gassuian Distribution
-Currently just plays a Galton Board.
-- Inputs: Height of Galton Board
-- Output: Value of the 'Ball' dropped.
+Plays Galton Board with an Array.
+- Inputs: Any type of array.
+- Output: An item inside that array, following normal distribution.
 
 #### 2.1 Program Rapport
-This addon is currently still in its early infancy. Further development is needed for better usefullness.
-
-The idea behind this, is that one is able to parse an Array into the playGaltonBoard method, then return a specific index, following normal distribution. --> Loot Table, most likely to drop bad loot, but sometimes good loot.
+Pretty Much Done, but some code could be refactored for code readability. But it works.
+The idea behind this, is that one is able to parse any Array into the playGaltonBoard method, then return a specific index, following normal distribution. --> Loot Table, most likely to drop bad loot, but sometimes good loot.
 
 #### 2.2 Bugs.
-None seen as of yet.
-
+Not exactly a bug, but more of a result of the idea behind the purpose of the code:
+- Both the Standart Diviation and the Mean is controlled by the Array.
+- - It is 'possible' to add a bias to the TranslatedBall, but that could throw a ArrayIndexOutOfBounds Exception. So further development could be implemented here.
+    
 #### 2.3 Additions Needed
-- Parse Array
-- Bias on Ball chance
+- Bias on Ball chance.
+- Console Code Seperation.
+- Util class seperation.
+
+#### Code "Documentation"
+To find the chanceOfHitting
+- Uses Pascal Triangle.
+When Printing the GaltonBoard
+- The chanceOfHitting is automatically formatted to be Out of 100 -> " x / 100 ", this calculation is done in the Util Class.
+  
+
