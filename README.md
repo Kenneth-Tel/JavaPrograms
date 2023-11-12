@@ -30,7 +30,7 @@ Not exactly a bug, but more of a result of the idea behind the purpose of the co
 - Console Code Seperation.
 - Util class seperation.
 
-#### Code "Documentation"
+#### 2.4 Code "Documentation"
 To find the chanceOfHitting
 - Uses Pascal Triangle.
 When Printing the GaltonBoard
